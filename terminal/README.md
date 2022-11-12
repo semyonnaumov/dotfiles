@@ -13,7 +13,7 @@ export HOMEBREW_CORE_GIT_REMOTE="..."  # put your Git mirror of Homebrew/homebre
 brew install --cask iterm2
 ```
 
-## 2. Install spaceship
+## 3. Install spaceship
 Spaceship is a pretty terminal prompt: https://github.com/spaceship-prompt/spaceship-prompt
 
 1. Install spaceship using brew
@@ -37,7 +37,7 @@ Spaceship is a pretty terminal prompt: https://github.com/spaceship-prompt/space
 
 4. Copy the contents of `.config/spaceship.toml` of this repo to `~/.config spaceship.toml`
 
-## 3. Add zsh-autosuggestions
+## 4. Add zsh-autosuggestions
 Zsh autosuggestions - https://github.com/zsh-users/zsh-autosuggestions
 
 1. Clone this repository somewhere on your machine. This guide will assume `~/.zsh/zsh-autosuggestions`.
@@ -52,7 +52,7 @@ Zsh autosuggestions - https://github.com/zsh-users/zsh-autosuggestions
     source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
     ```
 
-## 4. Add new color scheme to iterm2
+## 5. Add new color scheme to iterm2
 
 1. Download scheme into file - `~/popping-and-locking.itermcolors`
 
