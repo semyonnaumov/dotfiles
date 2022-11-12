@@ -1,17 +1,17 @@
 # Steps to setup a pretty terminal on Mac
 
 ## 1. Install brew
-'''sh
+```sh
 export HOMEBREW_BREW_GIT_REMOTE="..."  # put your Git mirror of Homebrew/brew here
 export HOMEBREW_CORE_GIT_REMOTE="..."  # put your Git mirror of Homebrew/homebrew-core here
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-'''
+```
 
 ## 2. Install iterm2
 
-'''sh
+```sh
 brew install --cask iterm2
-'''
+```
 
 ## 2. Install spaceship
 Spaceship is a pretty terminal prompt: https://github.com/spaceship-prompt/spaceship-prompt
@@ -60,4 +60,4 @@ Zsh autosuggestions - https://github.com/zsh-users/zsh-autosuggestions
 curl -sS https://raw.githubusercontent.com/mbadolato/iTerm2-Color-Schemes/master/schemes/Popping%20and%20Locking.itermcolors > ~/popping-and-locking.itermcolors
 ```
 
-2. Add this scheme by importing `~/popping-and-locking.itermcolors`: Profiles/Colors/Color Presets
+2. Add this scheme by importing `~/popping-and-locking.itermcolors` into Profiles/Colors/Color Presets
