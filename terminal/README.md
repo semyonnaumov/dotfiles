@@ -88,8 +88,14 @@ Zsh autosuggestions - https://github.com/zsh-users/zsh-autosuggestions
 
 1. Download scheme into file - `~/popping-and-locking.itermcolors`
 
-```sh
-curl -sS https://raw.githubusercontent.com/mbadolato/iTerm2-Color-Schemes/master/schemes/Popping%20and%20Locking.itermcolors > ~/popping-and-locking.itermcolors
-```
+    ```sh
+    curl -sS https://raw.githubusercontent.com/mbadolato/iTerm2-Color-Schemes/master/schemes/Popping%20and%20Locking.itermcolors > ~/popping-and-locking.itermcolors
+    ```
 
-2. Add this scheme by importing `~/popping-and-locking.itermcolors` into Profiles/Colors/Color Presets
+2. Add this scheme by importing `~/popping-and-locking.itermcolors`:
+
+    + Preferences (Cmd ⌘ + ,)
+    + Profiles
+    + Colors
+    + Color Presets
+    + Import...
