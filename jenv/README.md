@@ -36,25 +36,24 @@ exec $SHELL -l
 
 2. Add it to jenv:
 
-  ```sh
-  jenv add /Library/Java/JavaVirtualMachines/amazon-corretto-17.jdk/Contents/Home
-  ```
+    ```sh
+    jenv add /Library/Java/JavaVirtualMachines/amazon-corretto-17.jdk/Contents/Home
+    ```
   
 3. Use it:
+    ```sh
+    jenv global 17.0
+    ```
 
-  ```sh
-  jenv global 17.0
-  ```
+    Now you should see it works:
+    ```sh
+    java --version
+    openjdk 17.0.7 2023-04-18 LTS
+    OpenJDK Runtime Environment Corretto-17.0.7.7.1 (build 17.0.7+7-LTS)
+    OpenJDK 64-Bit Server VM Corretto-17.0.7.7.1 (build 17.0.7+7-LTS, mixed mode, sharing)
+    ```
 
-  Now you should see it works:
-  ```sh
-  java --version
-  openjdk 17.0.7 2023-04-18 LTS
-  OpenJDK Runtime Environment Corretto-17.0.7.7.1 (build 17.0.7+7-LTS)
-  OpenJDK 64-Bit Server VM Corretto-17.0.7.7.1 (build 17.0.7+7-LTS, mixed mode, sharing)
-  ```
-
-  ```sh
-  echo $JAVA_HOME
-  /Users/user/.jenv/versions/17.0
-  ```
+    ```sh
+    echo $JAVA_HOME
+    /Users/user/.jenv/versions/17.0
+    ```
