@@ -1,6 +1,6 @@
 # Steps to setup a pretty terminal on Mac
 
-## 1. Install brew
+## 1. Install [Homebrew](https://brew.sh/)
 ```sh
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
@@ -35,11 +35,39 @@ Spaceship is a pretty terminal prompt: https://github.com/spaceship-prompt/space
 
 4. Copy the contents of `.config/spaceship.toml` of this repo to `~/.config/spaceship.toml`
 
-5. Install [Nerd Font](https://www.nerdfonts.com/). You can check wether it is installed with this line:
+5. Spaceship requires some [Nerd Font](https://www.nerdfonts.com/) to be installed. You can check wether it is installed with this line:
     
     ```sh
     echo -e "\xee\x82\xa0"
     ```
+
+    If you see a git branch logo - you're all set up. If not, first, install a font: put its contents into the `/Library/Fonts` or `~/Library/Fonts` directory:
+       
+    ```sh
+    ➜ tree ~/Library/Fonts -L 2
+    /Users/user/Library/Fonts
+    ├── CaskaydiaCoveNerdFontMono-Bold.ttf
+    ├── CaskaydiaCoveNerdFontMono-BoldItalic.ttf
+    ├── CaskaydiaCoveNerdFontMono-ExtraLight.ttf
+    ├── CaskaydiaCoveNerdFontMono-ExtraLightItalic.ttf
+    ├── CaskaydiaCoveNerdFontMono-Italic.ttf
+    ├── CaskaydiaCoveNerdFontMono-Light.ttf
+    ├── CaskaydiaCoveNerdFontMono-LightItalic.ttf
+    ├── CaskaydiaCoveNerdFontMono-Regular.ttf
+    ├── CaskaydiaCoveNerdFontMono-SemiBold.ttf
+    ├── CaskaydiaCoveNerdFontMono-SemiBoldItalic.ttf
+    ├── CaskaydiaCoveNerdFontMono-SemiLight.ttf
+    └── CaskaydiaCoveNerdFontMono-SemiLightItalic.ttf
+    ```
+    
+    Then [add it](https://webinstall.dev/nerdfont/) to your iTerm: find iTerm2 in the top Mac menu, then...
+
+    => Preferences (Cmd ⌘ + ,)
+    => Profiles
+    => Text
+    => Font
+    => Select "CaskaydiaCove Nerd Font"
+
 
 ## 4. Add zsh-autosuggestions
 Zsh autosuggestions - https://github.com/zsh-users/zsh-autosuggestions
