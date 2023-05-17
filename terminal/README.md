@@ -20,10 +20,14 @@ Spaceship is a pretty terminal prompt: https://github.com/spaceship-prompt/space
     brew install spaceship
     ```
 
-2. Add prompt initialization to your `.zshrc`:
+2. Add prompt initialization to your `.zshrc` or `.zprofile`:
 
     ```sh
     echo "source $(brew --prefix)/opt/spaceship/spaceship.zsh" >>! ~/.zshrc
+    ```
+    
+    ```sh
+    echo "source $(brew --prefix)/opt/spaceship/spaceship.zsh" >>! ~/.zprofile
     ```
 
 3. Configure spaceship:
