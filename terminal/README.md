@@ -39,6 +39,12 @@ Spaceship is a pretty terminal prompt: https://github.com/spaceship-prompt/space
 
 4. Copy the contents of `.config/spaceship.toml` of this repo to `~/.config/spaceship.toml`
 
+5. Install [Nerd Font](https://www.nerdfonts.com/). You can check wether it is installed with this line:
+    
+    ```sh
+    echo -e "\xee\x82\xa0"
+    ```
+
 ## 4. Add zsh-autosuggestions
 Zsh autosuggestions - https://github.com/zsh-users/zsh-autosuggestions
 
@@ -48,7 +54,7 @@ Zsh autosuggestions - https://github.com/zsh-users/zsh-autosuggestions
     git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
     ```
 
-2. Add the following to your `.zshrc`:
+2. Add the following to your `.zshrc` or `.zprofile`:
 
     ```sh
     source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
