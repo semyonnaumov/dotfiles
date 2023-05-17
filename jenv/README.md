@@ -18,12 +18,6 @@ export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
 ```
 
-To verify jenv was installed, run 
-
-```sh
-jenv doctor
-```
-
 To make sure JAVA_HOME is set, make sure to enable the export plugin:
 
 ```sh
@@ -57,3 +51,13 @@ exec $SHELL -l
     echo $JAVA_HOME
     /Users/user/.jenv/versions/17.0
     ```
+ 
+ ## 4. Verify everything is fine
+Use jenv doctor for this:
+ 
+ ```sh
+ ➜ jenv doctor
+[OK]	JAVA_HOME variable probably set by jenv PROMPT
+[OK]	Java binaries in path are jenv shims
+[OK]	Jenv is correctly loaded
+```
