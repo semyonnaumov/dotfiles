@@ -62,11 +62,11 @@ Spaceship is a pretty terminal prompt: https://github.com/spaceship-prompt/space
     
     Then [add it](https://webinstall.dev/nerdfont/) to your iTerm: find iTerm2 in the top Mac menu, then...
 
-    => Preferences (Cmd ⌘ + ,)
-    => Profiles
-    => Text
-    => Font
-    => Select "CaskaydiaCove Nerd Font"
+    + Preferences (Cmd ⌘ + ,)
+    + Profiles
+    + Text
+    + Font
+    + Select "CaskaydiaCove Nerd Font"
 
 
 ## 4. Add zsh-autosuggestions
