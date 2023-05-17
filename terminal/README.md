@@ -37,7 +37,7 @@ Spaceship is a pretty terminal prompt: https://github.com/spaceship-prompt/space
     touch ~/.config spaceship.toml
     ```
 
-4. Copy the contents of `.config/spaceship.toml` of this repo to `~/.config spaceship.toml`
+4. Copy the contents of `.config/spaceship.toml` of this repo to `~/.config/spaceship.toml`
 
 ## 4. Add zsh-autosuggestions
 Zsh autosuggestions - https://github.com/zsh-users/zsh-autosuggestions
