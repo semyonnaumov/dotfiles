@@ -111,3 +111,8 @@ https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md
     echo "source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ~/.zshrc
     ```
 3. Restart the shell
+
+## 7. Enable syntax highlighting in vim
+```sh
+touch ~/.vimrc && echo 'filetype plugin indent on' >> ~/.vimrc && echo 'syntax on' >> ~/.vimrc
+```
