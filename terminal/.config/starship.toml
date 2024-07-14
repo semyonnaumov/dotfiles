@@ -1,8 +1,10 @@
-# ------------------------------------ ~/.congfig.starship.toml ----------------------------------------- #
+# ------------------------------------ ~/.congfig/starship.toml ----------------------------------------- #
 
 add_newline = false
+command_timeout = 500
 
 format = """
+$sudo\
 $username\
 $hostname\
 $directory\
@@ -18,26 +20,36 @@ $time\
 $line_break\
 $character"""
 
+[sudo]
+format = '[As $symbol]($style)'
+symbol = "🧙 "
+style = "bold red"
+disabled = false
+
+[username]
+format = "[$user]($style)@"
+
+[hostname]
+format = "[$ssh_symbol$hostname]($style) "
+
 [directory]
-# style = "blue"
-read_only = " "
 truncation_length = 5
-truncation_symbol = "…/"
+truncation_symbol = ".../"
 truncate_to_repo = false
 
 [fill]
 symbol = " "
 
 [java]
-symbol = " "
+symbol = "☕ "
 format = "[${symbol}(${version} )]($style)"
 style = "cyan"
 
 [jobs]
-symbol = ""
+symbol = "✦"
 style = "bold red"
 number_threshold = 1
-format = "[$symbol]($style)"
+format = "[$symbol$number]($style) "
 
 [git_branch]
 symbol = " "
@@ -60,6 +72,6 @@ format = "[$duration]($style) "
 style = "yellow"
 
 [time]
-disabled = false
+# disabled = false
 style = "bold white"
 format = "[$time]($style)"
