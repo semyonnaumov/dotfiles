@@ -11,31 +11,31 @@
 brew install --cask iterm2
 ```
 
-## 3. Install spaceship
-Spaceship is a pretty terminal prompt: https://github.com/spaceship-prompt/spaceship-prompt
+## 3. Install starship
+Starship is a pretty terminal prompt: https://github.com/starship/starship, https://starship.rs/guide/
 
-1. Install spaceship using brew
+1. Install starship using brew
 
     ```sh
-    brew install spaceship
+    brew install starship
     ```
 
-2. Add the following command (prompt initialization) to your `.zshrc` or `.zprofile`:
+2. Add the following command (prompt initialization) to your `.zshrc`:
     
     ```sh
-    source $(brew --prefix)/opt/spaceship/spaceship.zsh
+    eval "$(starship init zsh)"
     ```
 
-3. Configure spaceship:
+3. Configure starship:
 
     ```sh
     mkdir ~/.config
-    touch ~/.config spaceship.toml
+    touch ~/.config/starship.toml
     ```
 
-4. Copy the contents of `.config/spaceship.toml` of this repo to `~/.config/spaceship.toml`
+4. Copy the contents of `.config/starship.toml` of this repo to `~/.config/starship.toml`
 
-5. Spaceship requires some [Nerd Font](https://www.nerdfonts.com/) to be installed. You can check wether it is installed with this line:
+5. Starship requires some [Nerd Font](https://www.nerdfonts.com/) to be installed. You can check wether it is installed with this line:
     
     ```sh
     echo -e "\xee\x82\xa0"
@@ -99,3 +99,15 @@ Zsh autosuggestions - https://github.com/zsh-users/zsh-autosuggestions
     + Colors
     + Color Presets
     + Import...
+
+## 6. Add command syntax highlighting
+https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md
+1. Install brew formulae
+    ```sh
+    brew install zsh-syntax-highlighting
+    ```
+2. Source it to the shell
+    ```sh
+    echo "source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ~/.zshrc
+    ```
+3. Restart the shell
